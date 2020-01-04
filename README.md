@@ -38,6 +38,8 @@ The code base in this repo was created as follows:
 
 6. This updates all react related npm packages as well. Perhaps this requires a change in the SpaServices.Extensions for React.
 
+It appears as if the hypothesis is confirmed by others, see [ASP.NET Core issue 17618](https://github.com/aspnet/AspNetCore/issues/17618).
+
 ## Environment
 
 - Visual Studio 2019 Community Edition, version 16.4.2
@@ -76,3 +78,7 @@ Host (useful for support):
 To install additional .NET Core runtimes or SDKs:
   https://aka.ms/dotnet-download
 ```
+
+## Notes ##
+
+There seems to be a problem with ```npm ci``` in some versions of npm, e.g. version 6.13.4. As a workaround use ```npm ci --no-optional``` in folder `./ClientApp`. For more details about this issue see [npm cli issue 558](https://github.com/npm/cli/issues/558).
