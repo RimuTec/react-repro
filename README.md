@@ -40,6 +40,10 @@ The code base in this repo was created as follows:
 
 It appears as if the hypothesis is confirmed by others, see [ASP.NET Core issue 17618](https://github.com/aspnet/AspNetCore/issues/17618).
 
+## Workaround ##
+
+One workaround is disabling the use of IIS for debugging in the project file.
+
 ## Environment
 
 - Visual Studio 2019 Community Edition, version 16.4.2
